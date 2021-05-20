@@ -21,23 +21,23 @@ struct CustomTabBar: View {
             
             TabBarButton(animation: animation, image: "heart", selectedTab: $selectedTab)
             
-            Button(action: {}, label: {
-                
-                Image("search")
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 24, height: 24)
-                    .foregroundColor(Color.white)
-                    .padding(20)
-                    .background(Color("mainColor"))
-                    .clipShape(Circle())
-                
-                // Shadows
-                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: 5, y: 5)
-                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
-            })
-            .offset(y: -30)
+//            Button(action: {}, label: {
+//
+//                Image("search")
+//                    .resizable()
+//                    .renderingMode(.template)
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 24, height: 24)
+//                    .foregroundColor(Color.white)
+//                    .padding(20)
+//                    .background(Color("mainColor"))
+//                    .clipShape(Circle())
+//
+//                // Shadows
+//                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: 5, y: 5)
+//                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
+//            })
+//            .offset(y: -30)
             
             TabBarButton(animation: animation, image: "bell", selectedTab: $selectedTab)
             
@@ -47,7 +47,8 @@ struct CustomTabBar: View {
         .padding(.top)
         // decreasing the extra padding added
         .padding(.vertical, -10)
-        .padding(.bottom, getSafeArea().bottom == 0 ? 15 : getSafeArea().bottom)
+        .padding(.bottom, getSafeArea().bottom == 0 ? 5 : getSafeArea().bottom)
+        // ВИКТОР НЕ ЗАБУДЬ ПОЧИНИТЬ!
         .background(Color.white)
     }
 }
@@ -99,5 +100,6 @@ struct TabBarButton: View {
             }
             .frame(maxWidth: .infinity)
         })
+
     }
 }

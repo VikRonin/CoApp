@@ -16,6 +16,10 @@ struct Home: View {
     // selected category
     @State var selectedCategory : Category = categories.first!
     @State var selectedTab : String = "home"
+    // Trying to add DetailView
+    @State var show = false
+    @State var selectedItem : Popular!
+    
     var body: some View {
         
         // Tab view

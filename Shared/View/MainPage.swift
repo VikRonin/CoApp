@@ -63,22 +63,23 @@ struct MainPage: View {
                     
                     HStack(spacing:20){
                         
-                        VStack(alignment: .leading, spacing: 12, content: {
+                        VStack(alignment: .leading , spacing: 10, content: {
 
-                               (
+                               
                                 Text("Вступи в клуб!")
-//                                +
-//                                Text("скидка 10% по подписке")
                                     .foregroundColor(Color("mainColor"))
-                               )
-                               .font(.title2)
-                               .fontWeight(.bold)
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                            
+                            Text("скидка 10% по подписке")
+                                .font(.headline)
+                            
                             
                             // Button on top view || Кнопка на баннере
                             
                             Button(action: {}, label: {
                                 Text("Все бонусы")
-                                    .font(.footnote)
+                                    .font(.headline)
                                     .fontWeight(.semibold)
                                     .foregroundColor(.white)
                                     .padding(.vertical,10)
