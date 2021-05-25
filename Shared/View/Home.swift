@@ -3,7 +3,7 @@
 //  CoApp (iOS)
 //
 //  Created by Vik on 19.05.2021.
-//
+// new bugs added
 
 import SwiftUI
 
